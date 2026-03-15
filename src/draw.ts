@@ -52,5 +52,17 @@ function draw(
       Math.PI * 2
     );
     ctx.fill();
+    /*
+    ctx.strokeStyle = "white";
+    ctx.beginPath();
+    ctx.arc(
+      Math.floor(x),
+      Math.floor(y),
+      Math.floor(r),
+      0,
+      Math.PI * 2
+    );
+    ctx.stroke();
+    */
   }
 }

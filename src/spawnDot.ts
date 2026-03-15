@@ -26,8 +26,8 @@ function availableDotSpawnLocation(
 ): { x: number, y: number } | null {
   const r = dotRadius;
   const y = -r;
-  const leftBoundForCircleCenter = r / 2;
-  const availableWidthForCircleCenter = screenWidth - r;
+  const leftBoundForCircleCenter = r;
+  const availableWidthForCircleCenter = screenWidth - r*2;
   let x: number;
   for (let i = 0; i < timesToTrySpawningDot; i++) {
     x = leftBoundForCircleCenter + Math.random() * availableWidthForCircleCenter;
