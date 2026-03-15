@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#canvas {
+  background: black;
+  width: 100%;
+  height: 100%;
+  touch-action: none;
+}
+
+/* @media screen and (max-width: 666px) {
+  #canvas {
+    width: 100%;
+    height: 100%;
+  }
+} */
+
+@media screen and not (max-width: 666px) {
+  #canvas {
+    max-width: 800px;
+    max-height: 500px;
+  }
+}
